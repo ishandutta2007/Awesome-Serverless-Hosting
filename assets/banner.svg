@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glow & Text Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: url(#bgGrad); }
+    .grid-line { stroke: #334155; stroke-width: 0.5; opacity: 0.25; }
+    .particle { fill: #38bdf8; opacity: 0.4; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; font-size: 46px; fill: url(#primaryGrad); filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.35)); }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: 17px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #e2e8f0; }
+    .badge-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; fill: #64748b; }
+    .card-border { stroke: #38bdf8; stroke-opacity: 0.25; stroke-width: 1; rx: 12; }
+    .pulse-glow { animation: pulse 4s ease-in-out infinite alternate; }
+    .orbit-dot { animation: floatOrbit 6s linear infinite; }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      100% { opacity: 0.7; transform: scale(1.02); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" class="bg" />
+
+  <!-- Animated Ambient Nebula Blobs in Background -->
+  <g class="pulse-glow" style="transform-origin: 50% 50%;">
+    <circle cx="200" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)" />
+    <circle cx="1020" cy="270" r="160" fill="#a855f7" opacity="0.15" filter="url(#glow)" />
+    <circle cx="600" cy="320" r="120" fill="#3b82f6" opacity="0.1" filter="url(#glow)" />
+  </g>
+
+  <!-- Cyber Grid Lines -->
+  <g>
+    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line" />
+    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line" />
+    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line" />
+    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line" />
+    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line" />
+
+    <line x1="150" y1="0" x2="150" y2="360" class="grid-line" />
+    <line x1="350" y1="0" x2="350" y2="360" class="grid-line" />
+    <line x1="600" y1="0" x2="600" y2="360" class="grid-line" />
+    <line x1="850" y1="0" x2="850" y2="360" class="grid-line" />
+    <line x1="1050" y1="0" x2="1050" y2="360" class="grid-line" />
+  </g>
+
+  <!-- Animated Glowing Network Waves / Signal Paths (in Background) -->
+  <g opacity="0.45">
+    <path d="M-50,290 C300,210 500,340 850,260 C1050,210 1150,270 1250,240" fill="none" stroke="url(#primaryGrad)" stroke-width="2.5" stroke-dasharray="8 6">
+      <animate attributeName="stroke-dashoffset" from="200" to="0" dur="20s" repeatCount="indefinite" />
+    </path>
+    <path d="M-50,320 C250,250 550,380 800,290 C1000,220 1150,310 1250,280" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="0" to="150" dur="15s" repeatCount="indefinite" />
+    </path>
+    <path d="M-50,110 C320,180 620,60 920,130 C1080,170 1180,100 1250,120" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="300" to="0" dur="25s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Animated Moving Particle Lights along circuit -->
+  <circle cx="0" cy="0" r="3.5" fill="#38bdf8" filter="url(#subtleGlow)">
+    <animateMotion path="M-50,290 C300,210 500,340 850,260 C1050,210 1150,270 1250,240" dur="7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="0" cy="0" r="3" fill="#c084fc" filter="url(#subtleGlow)">
+    <animateMotion path="M-50,320 C250,250 550,380 800,290 C1000,220 1150,310 1250,280" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="0" cy="0" r="3" fill="#34d399" filter="url(#subtleGlow)">
+    <animateMotion path="M-50,110 C320,180 620,60 920,130 C1080,170 1180,100 1250,120" dur="9s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- FOREGROUND: Category Header Badges -->
+  <g transform="translate(435, 38)">
+    <rect width="330" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="16" cy="15" r="4.5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="30" y="20" class="badge-text" fill="#38bdf8" font-size="12" letter-spacing="1.5">⚡ CURATED ECOSYSTEM DIRECTORY</text>
+  </g>
+
+  <!-- MAIN FOREGROUND TEXT (Clear, High Contrast, Prominent) -->
+  <g>
+    <text x="600" y="125" text-anchor="middle" class="title">Awesome Serverless Hosting 🚀</text>
+    <text x="600" y="165" text-anchor="middle" class="subtitle">Next-Gen PaaS Platforms • Zero-Ops Edge Compute • Git-Push Deployments • Open-Source FaaS</text>
+  </g>
+
+  <!-- FOREGROUND FEATURE PILLS / METRIC CARDS -->
+  <g transform="translate(100, 210)">
+    <!-- Card 1: SaaS Cloud Leaders -->
+    <g transform="translate(0, 0)">
+      <rect width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1" />
+      <text x="24" y="34" class="badge-text" font-size="15">☁️ Managed Clouds</text>
+      <text x="24" y="56" class="badge-sub" font-size="12">Vercel • Cloudflare • AWS</text>
+      <text x="24" y="74" class="badge-sub" font-size="11" fill="#38bdf8">Global Edge &amp; Instant Scale</text>
+    </g>
+
+    <!-- Card 2: Self-Hosted PaaS -->
+    <g transform="translate(255, 0)">
+      <rect width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-opacity="0.3" stroke-width="1" />
+      <text x="24" y="34" class="badge-text" font-size="15">🛠️ Self-Hosted PaaS</text>
+      <text x="24" y="56" class="badge-sub" font-size="12">Coolify • Dokku • Dokploy</text>
+      <text x="24" y="74" class="badge-sub" font-size="11" fill="#818cf8">Total Data &amp; Server Control</text>
+    </g>
+
+    <!-- Card 3: Kubernetes & FaaS -->
+    <g transform="translate(510, 0)">
+      <rect width="220" height="90" rx="12" fill="url(#cardGrad)" stroke="#c084fc" stroke-opacity="0.3" stroke-width="1" />
+      <text x="24" y="34" class="badge-text" font-size="15">⚡ Serverless &amp; FaaS</text>
+      <text x="24" y="56" class="badge-sub" font-size="12">OpenFaaS • Fission • Knative</text>
+      <text x="24" y="74" class="badge-sub" font-size="11" fill="#c084fc">Scale-to-Zero Architecture</text>
+    </g>
+
+    <!-- Card 4: Local & Emulators -->
+    <g transform="translate(765, 0)">
+      <rect width="235" height="90" rx="12" fill="url(#cardGrad)" stroke="#34d399" stroke-opacity="0.3" stroke-width="1" />
+      <text x="24" y="34" class="badge-text" font-size="15">🧪 Local Dev &amp; DX</text>
+      <text x="24" y="56" class="badge-sub" font-size="12">LocalStack • Serverless FW</text>
+      <text x="24" y="74" class="badge-sub" font-size="11" fill="#34d399">Offline Testing &amp; IaC Speed</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line with Glow -->
+  <line x1="200" y1="335" x2="1000" y2="335" stroke="url(#primaryGrad)" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+</svg>
