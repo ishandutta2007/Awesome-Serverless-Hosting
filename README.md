@@ -62,7 +62,7 @@ The table below outlines leading commercial serverless hosting and PaaS provider
 
 ## 🛠️ Open-Source GitHub Projects
 
-Explore the most popular open-source serverless hosting engines, PaaS solutions, and FaaS platforms. Repositories are organized with real-time star badges linking to stargazers and sorted by **GitHub Star Count in descending order**:
+Explore the most popular open-source serverless hosting engines, PaaS solutions, and FaaS platforms. Repositories are organized with real-time Stars_Badges linking to stargazers and sorted by **GitHub Stars_Count in descending order**:
 
 ### 📦 Self-Hosted PaaS (Vercel & Heroku Alternatives)
 
@@ -152,7 +152,7 @@ We love community contributions! To add a new platform or update existing detail
 
 1. 🍴 **Fork** this repository.
 2. 🌿 **Create a new branch** (`git checkout -b add-platform-name`).
-3. 📝 **Add your entry** adhering to table format or alphabetical star order with verified pricing, free tier limits, and GitHub star badges.
+3. 📝 **Add your entry** adhering to table format or alphabetical star order with verified pricing, free tier limits, and GitHub Stars_Badges.
 4. 🚀 **Commit your changes** (`git commit -m "Add Awesome Platform"`).
 5. 📤 **Push to your branch** (`git push origin add-platform-name`).
 6. 🎯 **Open a Pull Request** with a brief summary of the project.
