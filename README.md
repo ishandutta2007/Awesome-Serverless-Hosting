@@ -4,10 +4,12 @@
 
 # Awesome Serverless Hosting 🚀
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Track Awesome List](https://img.shields.io/badge/Maintained%20with-TrackAwesomeList-blue.svg)](https://github.com/ishandutta2007/Awesome-Serverless-Hosting)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Serverless-Hosting/pulls)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > A curated list of top **Serverless Hosting**, **Platform-as-a-Service (PaaS)**, **Frontend Cloud**, and **Self-Hosted Open-Source Alternatives** to deploy apps, microservices, and static sites with modern Git-integrated workflows.
 
@@ -25,6 +27,8 @@ Whether you're looking for enterprise global edge CDNs like Vercel, Netlify, and
   - [🌱 Additional Emerging Open-Source Projects](#-additional-emerging-open-source-projects)
 - [🧭 Decision Guide: Which Platform Should You Choose?](#-decision-guide-which-platform-should-you-choose)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⭐ Star History](#-star-history)
 - [⚖️ Disclaimer & License](#️-disclaimer--license)
 
 ---
@@ -152,6 +156,23 @@ We love community contributions! To add a new platform or update existing detail
 4. 🚀 **Commit your changes** (`git commit -m "Add Awesome Platform"`).
 5. 📤 **Push to your branch** (`git push origin add-platform-name`).
 6. 🎯 **Open a Pull Request** with a brief summary of the project.
+
+---
+
+## 💖 Support
+
+Thank you for visiting and using this curated guide! If this list has saved you time or helped you choose the right serverless hosting solution for your next project, please consider supporting the project:
+
+- ⭐ **Star** this repository to show appreciation and help others discover it.
+- 🍴 **Fork** and contribute to keeping features, pricing, and new tools updated.
+- 📢 **Share** this list with fellow developers, DevOps teams, and on social networks.
+- ☕ **Buy me a coffee**: You can directly sponsor and support ongoing development via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Every bit of support is deeply appreciated!
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Serverless-Hosting&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Serverless-Hosting&type=date&legend=top-left)
 
 ---
 
